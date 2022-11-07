@@ -1,8 +1,9 @@
-import express from "express";
-import controller from "../controllers/cards.controller.js";
+import express from 'express'
+import controller from '../controllers/cards.controller.js'
 
-const router = express.Router();
+const router = express.Router()
 
-router.get("/", controller.getCards);
+router.get('/', controller.getCards)
+router.post('/', controller.postCard)
 
-export default router;
+export default router
